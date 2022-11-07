@@ -2,17 +2,23 @@
 @import 'fonts';
 @import 'Header';
 @import 'Banner';
+@import 'Home';
 
 html {
     margin: auto;
-    max-width: 1240px;
+    max-width: 1440px;
     font-size: 18px;
     color: $txt-color;
     font-family: 'Montserrat-Light';
     background: $bg-clr;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
+    padding: 0;
     list-style-type: none;
 }
 
