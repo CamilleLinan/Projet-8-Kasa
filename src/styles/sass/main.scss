@@ -3,8 +3,10 @@
 @import 'Header';
 @import 'Banner';
 @import 'Home';
+@import 'footer';
 
 html {
+    position: relative;
     margin: auto;
     max-width: 1440px;
     font-size: 18px;
