@@ -1,5 +1,5 @@
 import Header from "../components/Layout/Header"
-import Banner from "../components/Home/Banner"
+import BannerHome from "../components/Home/BannerHome"
 import DisplayCards from "../components/Home/DisplayCards"
 import Footer from "../components/Layout/Footer"
 
@@ -7,7 +7,7 @@ const Home = () => {
     return(
         <>
             <Header />
-            <Banner />
+            <BannerHome />
             <DisplayCards />
             <Footer />
         </>
