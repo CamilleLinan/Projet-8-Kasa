@@ -1,12 +1,12 @@
 import housings from '../../datas/logements.json'
-import HousingItem from './HousingItem'
+import Card from './Card'
 
-const DisplayHousings = () => {
+const DisplayCards = () => {
     return(
         <section className='housings_container'>
             <ul className='housings_list'>
                 {housings.map(({ id, title, cover }) => (
-                    <HousingItem
+                    <Card
                         key={id}
                         id={id}
                         title={title}
@@ -18,4 +18,4 @@ const DisplayHousings = () => {
     )
 }
 
-export default DisplayHousings
+export default DisplayCards;

@@ -1,4 +1,4 @@
-const HousingItem = ({ id, title, cover }) => {
+const Card = ({ id, title, cover }) => {
     return(
         <li key={id} className='housing'>
             <a href={'/housing/' + id}>
@@ -13,4 +13,4 @@ const HousingItem = ({ id, title, cover }) => {
     )
 }
 
-export default HousingItem;
+export default Card;

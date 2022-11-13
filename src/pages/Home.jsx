@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header"
 import Banner from "../components/Home/Banner"
-import DisplayHouses from "../components/Home/DisplayHousings"
+import DisplayCards from "../components/Home/DisplayCards"
 import Footer from "../components/Layout/Footer"
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <>
             <Header />
             <Banner />
-            <DisplayHouses />
+            <DisplayCards />
             <Footer />
         </>
     )
