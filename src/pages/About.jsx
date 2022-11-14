@@ -1,6 +1,7 @@
 import Header from "../components/Layout/Header"
 import BannerAbout from "../components/About/BannerAbout"
 import Collapse from "../components/About/Collapse"
+import Footer from "../components/Layout/Footer"
 
 const About = () => {
     return(
@@ -8,6 +9,7 @@ const About = () => {
             <Header />
             <BannerAbout />
             <Collapse />
+            <Footer />
         </>
     )
 }

@@ -1,4 +1,9 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
+
+const angleDown = <FontAwesomeIcon icon={faAngleDown} />
+const angleUp = <FontAwesomeIcon icon={faAngleUp} />
 
 const Collapse = () => {
     const [ openTab1, setOpenTab1 ] = useState(false);
@@ -25,7 +30,10 @@ const Collapse = () => {
     return(
         <section className="about">
             <div className="about_collapse">
-                <h2 onClick={openTabHandler1} className="about_collapse_title">Fiabilité</h2>
+                <div onClick={openTabHandler1} className="about_collapse_container">
+                    <h2 className="about_collapse_container_title">Fiabilité</h2>
+                    {!openTab1 ? <i className="about_collapse_container_icon">{angleDown}</i> : <i className="about_collapse_container_icon">{angleUp}</i>}
+                </div>
                 {openTab1 && 
                     <p className="about_collapse_content">
                       Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -35,7 +43,10 @@ const Collapse = () => {
                 }
             </div>
             <div className="about_collapse">
-                <h2 onClick={openTabHandler2} className="about_collapse_title">Respect</h2>
+                <div onClick={openTabHandler2} className="about_collapse_container">
+                    <h2 className="about_collapse_container_title">Respect</h2>
+                    {!openTab2 ? <i className="about_collapse_container_icon">{angleDown}</i> : <i className="about_collapse_container_icon">{angleUp}</i>}
+                </div>
                 {openTab2 && 
                     <p className="about_collapse_content">
                         La bienveillance fait partie des valeurs fondatrices de Kasa. 
@@ -45,7 +56,10 @@ const Collapse = () => {
                 }
             </div>
             <div className="about_collapse">
-                <h2 onClick={openTabHandler3} className="about_collapse_title">Service</h2>
+                <div onClick={openTabHandler3} className="about_collapse_container">
+                    <h2 className="about_collapse_container_title">Service</h2>
+                    {!openTab3 ? <i className="about_collapse_container_icon">{angleDown}</i> : <i className="about_collapse_container_icon">{angleUp}</i>}
+                </div>
                 {openTab3 && 
                     <p className="about_collapse_content">
                         Nos équipes se tiennent à votre disposition pour vous fournir une 
@@ -55,7 +69,10 @@ const Collapse = () => {
                 }
             </div>
             <div className="about_collapse">
-                <h2 onClick={openTabHandler4} className="about_collapse_title">Sécurité</h2>
+                <div onClick={openTabHandler4} className="about_collapse_container">
+                    <h2 className="about_collapse_container_title">Sécurité</h2>
+                    {!openTab4 ? <i className="about_collapse_container_icon">{angleDown}</i> : <i className="about_collapse_container_icon">{angleUp}</i>}
+                </div>
                 {openTab4 && 
                     <p className="about_collapse_content">
                         La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que 
