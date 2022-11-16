@@ -1,6 +1,12 @@
+import Header from "../components/Layout/Header";
+import HousingPage from "../components/HousingPage/HousingPage";
+
 const Housing = () => {
     return(
-        <><p>Hello depuis Housing</p></>
+        <>
+            <Header />
+            <HousingPage />
+        </>
     )
 }
 
