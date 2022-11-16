@@ -1,12 +1,15 @@
 @import 'variables';
 @import 'fonts';
 @import 'Header';
-@import 'Banner';
+@import 'BannerHome';
 @import 'Home';
+@import 'About';
+@import 'Error404';
 @import 'footer';
 
 html {
     position: relative;
+    min-height: 100%;
     margin: auto;
     max-width: 1440px;
     font-size: 18px;
