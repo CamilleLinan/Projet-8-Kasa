@@ -1,6 +1,14 @@
+import Header from "../components/Layout/Header"
+import ErrorContent from "../components/Error404/ErrorContent";
+import Footer from "../components/Layout/Footer"
+
 const Error404 = () => {
     return(
-        <><p>Hello depuis Error404</p></>
+        <>
+            <Header />
+            <ErrorContent />
+            <Footer /> 
+        </>
     )
 }
 
