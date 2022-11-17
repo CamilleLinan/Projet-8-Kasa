@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import housings from '../../datas/logements.json'
 import Collapse from '../Layout/Collapse';
+import RatingScale from './RatingScale';
 
 const HousingPage = () => {
     const { id } = useParams()
@@ -8,31 +9,52 @@ const HousingPage = () => {
     return (
         <> {housings.map((housing, i) => ( <>
             {id === housing.id &&
-                <div key={housing.id}>
-                    <div className="banner">
-                        <img src={housing.cover} alt='banniere-kasa' className='banner_img' />
+                <section key={housing.id} className='housing_page'>
+                    <div className="housing_page_banner">
+                        <img src={housing.cover} alt='banniere-kasa' className='housing_page_banner_img' />
                     </div>
-                    <div>
-                        <h1>{housing.title}</h1>
-                        <h2>{housing.location}</h2>
-                        {housing.tags.map((tag, i) => (
-                            <p>{tag}</p>
-                        ))}
-                    </div>
-                    <div>
-                        <p>{housing.host.name}</p>
-                        <img src={housing.host.picture} alt='host-cover'/>
-                        <p>{housing.rating}</p>
-                    </div>
-                    <Collapse
-                        title='Description'
-                        content={housing.description}
-                    />
-                    <Collapse
-                        title='Équipements'
-                        content={housing.equipments}
-                    />
-                </div>
+
+                    <header className='housing_page_header'>
+                        <article className='housing_page_header_infos'>
+                            <h1 className='housing_page_header_infos_title'>{housing.title}</h1>
+                            <h2 className='housing_page_header_infos_subtitle'>{housing.location}</h2>
+                            <div className='housing_page_header_infos_tags'>
+                                {housing.tags.map((tag, i) => (
+                                    <p className='housing_page_header_infos_tags_tag'>{tag}</p>
+                                ))}
+                            </div>
+                        </article>
+                    
+                        <article className='housing_page_header_hoster'>
+                            <div className='housing_page_header_hoster_infos'>
+                                <p className='housing_page_header_hoster_infos_name'>{housing.host.name}</p>
+                                <img src={housing.host.picture} alt='host-cover' className='housing_page_header_hoster_infos_img'/>
+                            </div>
+                            <RatingScale
+                                scaleValue={housing.rating}
+                            />
+                        </article>
+                    </header>
+
+                    <article className='housing_page_details'>
+                        <div className='housing_page_details_collapse'>
+                            <Collapse
+                                title='Description'
+                                content={housing.description}
+                            />
+                        </div>
+                        <div className='housing_page_details_collapse'>
+                            <Collapse
+                                title='Équipements'
+                                content={housing.equipments.map((equipment, i) => (
+                                    <ul>
+                                        <li>{equipment}</li>
+                                    </ul>
+                                ))}
+                            />
+                        </div>
+                    </article>
+                </section>
             }
         </> ))} </>
     )

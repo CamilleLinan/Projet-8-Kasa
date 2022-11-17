@@ -13,15 +13,15 @@ const Collapse = (props) => {
     };
 
     return (
-        <div className="about_collapse">
-            <div onClick={openTabHandler} className="about_collapse_container">
-                <h2 className="about_collapse_container_title">{props.title}</h2>
-                {!openTab ? <i className="about_collapse_container_icon">{angleDown}</i> : <i className="about_collapse_container_icon">{angleUp}</i>}
+        <>
+            <div onClick={openTabHandler} className="collapse_header">
+                <h2 className="collapse_header_title">{props.title}</h2>
+                {!openTab ? <i className="collapse_header_icon">{angleDown}</i> : <i className="collapse_header_icon">{angleUp}</i>}
             </div>
             {openTab && 
-                <p className="about_collapse_content">{props.content}</p>
+                <p className="collapse_content">{props.content}</p>
             }
-        </div>
+        </>
     )
 }
 
