@@ -1,6 +1,6 @@
 import Header from "../components/Layout/Header"
 import BannerAbout from "../components/About/BannerAbout"
-import Collapse from "../components/About/Collapse"
+import AboutContent from "../components/About/AboutContent"
 import Footer from "../components/Layout/Footer"
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
         <>
             <Header />
             <BannerAbout />
-            <Collapse />
+            <AboutContent />
             <Footer />
         </>
     )
