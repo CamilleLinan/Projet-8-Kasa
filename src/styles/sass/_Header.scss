@@ -37,14 +37,30 @@
             align-items: center;
         }
         
-        & li {
-            padding: 1rem 0rem 1rem 2rem;
+        &_link {
+            transition: all 250ms ease-in-out;
             font-size: 19px;
-        }
-        
-        &_link_active {
-            font-family: 'Montserrat-Medium';
-            text-decoration: underline;
+            margin: 1rem 0.5rem;
+            
+            &_navlink {
+                padding: 0.2rem 0.7rem;
+            }
+            
+            &_active {
+                font-family: 'Montserrat-Medium';
+                background: hsla(0, 100%, 82%, 0.2);
+                border-radius: 0.3rem;
+                padding: 0.2rem 0.7rem;
+            }
+
+            &_inactive {
+                &:hover {
+                    font-family: 'Montserrat-Medium';
+                    background: hsla(0, 100%, 82%, 0.2);
+                    border-radius: 0.3rem;
+                    padding: 0.2rem 0.7rem;
+                }
+            }
         }
     }
 }

@@ -9,18 +9,18 @@ const Header = () => {
             </div>
             <nav className='header_nav'>
                 <ul>
-                    <li>
+                    <li className='header_nav_link'>
                         <NavLink
-                            className={({ isActive }) => (isActive ? 'header_nav_link header_nav_link_active' : 'header_nav_link')}
+                            className={({ isActive }) => (isActive ? 'header_nav_link_navlink header_nav_link_active' : 'header_nav_link_navlink header_nav_link_inactive')}
                             title='Accueil'
                             end to='/home'
                         >
                             Accueil
                         </NavLink>
                     </li>
-                    <li>
+                    <li className='header_nav_link'>
                         <NavLink
-                            className={({ isActive }) => (isActive ? 'header_nav_link header_nav_link_active' : 'header_nav_link')}
+                            className={({ isActive }) => (isActive ? 'header_nav_link_navlink header_nav_link_active' : 'header_nav_link_navlink header_nav_link_inactive')}
                             title='À propos'
                             end to='/about'
                         >

@@ -5,7 +5,7 @@
         width: 98% !important;
         justify-content: start !important;
         &_title {
-            width: 63% !important;
+            width: 65% !important;
             padding-left: 1rem;
         }
     }
@@ -18,6 +18,13 @@
     justify-content: center;
     align-items: center;
 
+    &_title {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        font-size: 28px;
+    }
+
     &_img {
         position: relative;
         width: 100%;
@@ -25,12 +32,5 @@
         object-fit: cover;
         border-radius: 0.8rem;
         filter: brightness(60%);
-    }
-
-    &_title {
-        position: absolute;
-        z-index: 1;
-        color: white;
-        font-size: 28px;
-    }
+    }  
 }

@@ -12,7 +12,9 @@ const RatingScale = (props) => {
     return (
         <div className='housing_page_header_hoster_ratings'>
             {range.map((rangeElem) =>
-                scaleValue >= rangeElem ? <span key={rangeElem.toString()} className='housing_page_header_hoster_ratings_star'>{star}</span> : <span key={rangeElem.toString()} className='housing_page_header_hoster_ratings_star housing_page_header_hoster_ratings_star_grey'>{starGrey}</span>
+                scaleValue >= rangeElem ? 
+                    <span key={rangeElem.toString()} className='housing_page_header_hoster_ratings_star'>{star}</span> 
+                    : <span key={rangeElem.toString()} className='housing_page_header_hoster_ratings_star housing_page_header_hoster_ratings_star_grey'>{starGrey}</span>
             )}
         </div>
     )
