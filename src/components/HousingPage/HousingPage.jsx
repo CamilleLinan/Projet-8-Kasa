@@ -1,3 +1,4 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import housings from '../../datas/logements.json'
 import Collapse from '../Layout/Collapse';

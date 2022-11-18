@@ -1,3 +1,4 @@
+import React from 'react';
 import housings from '../../datas/logements.json'
 import Card from './Card'
 

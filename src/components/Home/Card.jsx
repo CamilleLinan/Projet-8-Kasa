@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Card = ({ id, title, cover }) => {
     return(
         <li key={id} className='housing'>

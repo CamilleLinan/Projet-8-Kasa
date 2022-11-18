@@ -1,3 +1,4 @@
+import React from 'react';
 import logoFooter from '../../styles/img/logo-kasa-footer.png'
 
 const Footer = () => {

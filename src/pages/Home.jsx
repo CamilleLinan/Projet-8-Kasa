@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from "../components/Layout/Header"
 import BannerHome from "../components/Home/BannerHome"
 import DisplayCards from "../components/Home/DisplayCards"

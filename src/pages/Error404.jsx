@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from "../components/Layout/Header"
 import ErrorContent from "../components/Error404/ErrorContent";
 import Footer from "../components/Layout/Footer"
