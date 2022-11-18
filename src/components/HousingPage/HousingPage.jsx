@@ -48,7 +48,7 @@ const HousingPage = () => {
                                 title='Équipements'
                                 content={housing.equipments.map((equipment, i) => (
                                     <ul>
-                                        <li>{equipment}</li>
+                                        <li>• {equipment}</li>
                                     </ul>
                                 ))}
                             />
