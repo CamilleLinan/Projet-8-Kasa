@@ -18,12 +18,12 @@
             
             &_hoster {
                 flex-direction: row-reverse !important;
-                justify-content: space-between;
                 align-items: center !important;
                 margin-top: 0 !important;
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
                 
                 &_infos {
+                    align-items: center;
                     &_name {
                         margin-top: 0 !important;
                         margin-bottom: 0 !important;
@@ -31,9 +31,9 @@
                 }
 
                 &_ratings {
+                    padding: 0 0.2rem 1rem 0 !important;
                     &_star {
-                        padding-left: 0 !important;
-                        padding-right: 0.2rem;
+                        padding: 0 0.2rem 3rem 0 !important;
                     }
                 }
             }
@@ -46,6 +46,7 @@
             
             &_collapse {
                 width: 100% !important;
+                margin-bottom: 0 !important;
             }
         }
     }
