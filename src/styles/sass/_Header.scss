@@ -13,6 +13,11 @@
             & ul {
                 padding-left: 0;
             }
+            &_link {
+                &_navlink {
+                    padding: 0.2rem 0 0.2rem 0.3rem !important;
+                }
+            }
         }
     }
 }
