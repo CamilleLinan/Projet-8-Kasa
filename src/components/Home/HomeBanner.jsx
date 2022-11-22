@@ -1,14 +1,14 @@
 import React from 'react';
 import Banner from '../Layout/Banner';
-import bannerHome from '../../styles/img/bannerHome-kasa.webp'
+import homeBanner from '../../styles/img/bannerHome-kasa.webp'
 
-const BannerHome = () => {
+const HomeBanner = () => {
     return(
         <Banner
             title='Chez vous, partout et ailleurs'
-            src={bannerHome}
+            src={homeBanner}
         />
     )
 }
 
-export default BannerHome;
+export default HomeBanner;
