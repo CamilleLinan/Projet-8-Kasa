@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import housings from '../../datas/logements.json'
+import housings from '../../datas/logements.json';
 import Collapse from '../Layout/Collapse';
+import Gallery from '../Layout/Gallery';
 import RatingScale from './RatingScale';
 
 const HousingPage = () => {
@@ -11,9 +12,9 @@ const HousingPage = () => {
         <> {housings.map((housing, i) => ( <>
             {id === housing.id &&
                 <section key={housing.id} className='housing_page'>
-                    <div className="housing_page_banner">
-                        <img src={housing.cover} alt='banniere-kasa' className='housing_page_banner_img' />
-                    </div>
+                    <Gallery 
+                        img={housing.pictures} 
+                    />
 
                     <header className='housing_page_header'>
                         <article className='housing_page_header_infos'>
