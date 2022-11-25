@@ -1,18 +1,22 @@
 @import 'variables';
 
 @media(max-width: 768px) {
-    .about {
+    .about_collapses {
         width: 98% !important;
         margin-top: 1.7rem !important;
     }
 }
 
 .about {
-    width: 80%;
-    margin: 3rem auto;
-    margin-bottom: 8rem;
-    
-    &_collapse {
-        margin-bottom: 1.2rem;
+    &_collapses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 6rem;
+        &_content {
+            margin-bottom: 0.5rem;
+            width: 95%;
+        }
     }
 }

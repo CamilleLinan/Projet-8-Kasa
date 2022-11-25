@@ -20,7 +20,7 @@ const Collapse = (props) => {
                 {!openTab ? <i className="collapse_header_icon">{angleDown}</i> : <i className="collapse_header_icon">{angleUp}</i>}
             </div>
             {openTab && 
-                <p className="collapse_content">{props.content}</p>
+                <div className="collapse_content">{props.content}</div>
             }
         </>
     )

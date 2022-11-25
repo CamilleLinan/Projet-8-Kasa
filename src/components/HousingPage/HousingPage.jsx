@@ -44,19 +44,19 @@ const HousingPage = () => {
                 </article>
             </header>
 
-            <article className='housing_page_details'>
-                <div className='housing_page_details_collapse'>
+            <article className='housing_page_collapses'>
+                <div className='housing_page_collapses_content'>
                     <Collapse
                         title='Description'
                         content={housing.description}
                     />
                 </div>
-                <div className='housing_page_details_collapse'>
+                <div className='housing_page_collapses_content'>
                     <Collapse
                         title='Équipements'
                         content={housing.equipments.map((equipment, i) => (
-                            <ul>
-                                <li key={i}>• {equipment}</li>
+                            <ul key={i}>
+                                <li>• {equipment}</li>
                             </ul>
                         ))}
                     />

@@ -39,12 +39,12 @@
             }
         }
 
-        &_details {
+        &_collapses {
             flex-direction: column;
             justify-content: center;
             align-items: center;
             
-            &_collapse {
+            &_content {
                 width: 100% !important;
                 margin-bottom: 0 !important;
             }
@@ -133,11 +133,11 @@
         }
     }
 
-    &_details {
+    &_collapses {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        &_collapse {
+        &_content {
             margin: 1rem 0;
             width: 47%;
             & ul {
