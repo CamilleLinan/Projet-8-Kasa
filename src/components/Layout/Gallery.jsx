@@ -34,8 +34,8 @@ const Gallery = (props) => {
     return (
         <div className='slideshow'>
             <div className='slideshow_container' style={{transform: `translateX(-${slideIdx * imgSize()}px)`}}>
-                {props.img.map((picture) => 
-                    <img className='slideshow_container_img' alt='banniere-page-logement' src={picture} key={picture} />
+                {props.img.map((picture, i) => 
+                    <img className='slideshow_container_img' alt='banniere-page-logement' src={picture} key={i} />
                 )}
             </div>
             
