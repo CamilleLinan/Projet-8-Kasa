@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from "../components/Layout/Header"
-import ErrorContent from "../components/Error404/ErrorContent";
+import NoMatchContent from "../components/NoMatch/NoMatchContent";
 import Footer from "../components/Layout/Footer"
 
-const Error404 = () => {
+const NoMatch = () => {
     return(
         <>
             <Header />
-            <ErrorContent />
+            <NoMatchContent />
             <Footer /> 
         </>
     )
 }
 
-export default Error404;
+export default NoMatch;
