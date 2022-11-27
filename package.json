@@ -1,7 +1,6 @@
 {
   "name": "front",
   "version": "0.1.0",
-  "homepage": "https://CamilleLinan.github.io/Projet-8-Kasa",
   "private": true,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
