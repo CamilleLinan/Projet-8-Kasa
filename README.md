@@ -17,4 +17,5 @@ Développer l'ensemble de l'application et ses composants avec React, en suivant
 + Langages utilisés :
 HTML5 / CSS3 / SASS / JavaScript / React
 
+Visiter le site web : https://projet-8-kasa-brnf30w8b-camillelinan.vercel.app/ <br/>
 Plus d'informations sur mon portfolio : https://camillelinan.com/project/Kasa
